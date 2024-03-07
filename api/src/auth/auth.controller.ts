@@ -48,7 +48,7 @@ export class AuthController {
       if (error instanceof NotFoundException) {
         throw new NotFoundException('Usuario no encontrado');
       } else {
-        throw error;
+        throw new NotFoundException('Credenciales inválidas');
       }
     }
   }

@@ -13,7 +13,7 @@ import { InterestsModule } from './interests/interests.module';
     ConfigModule.forRoot(),
     MongooseModule.forRootAsync({
       useFactory: async () => ({
-        uri: process.env.MONGODB_CLOUD,
+        uri: "mongodb+srv://jalvery20:3Hp6UXqVrHDkoRfj@mantclientes.arpwrqm.mongodb.net/?retryWrites=true&w=majority&appName=mantclientes",
       }),
     }),
     UsersModule,
